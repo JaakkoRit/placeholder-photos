@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 import { usePhotos } from "../api/getPhotos";
-import "../styles/photosList.css";
+import "../styles/PhotosList.css";
 import { PhotosList } from "./PhotosList";
 import { Pagination } from "@/components/pagination/Pagination";
 import { usePhotosPage } from "@/hooks/usePhotosPage";
