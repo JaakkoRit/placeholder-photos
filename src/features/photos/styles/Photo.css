@@ -1,0 +1,11 @@
+.photo-error-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-error-container > img {
+  width: 70px;
+  height: 70px;
+}
