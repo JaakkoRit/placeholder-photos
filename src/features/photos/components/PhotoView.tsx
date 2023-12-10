@@ -11,16 +11,13 @@ interface Props {
 
 export const PhotoView = ({ id }: Props): ReactElement => {
   const { data: photo, status: photoStatus } = usePhoto(id);
-  const { data: albumData, status: albumStatus } = useAlbum(photo?.albumId);
+  const { data: albumData } = useAlbum(photo?.albumId);
 
   if (photoStatus === "loading") {
     return <LoadingSpinner />;
   } else if (photoStatus === "error" || photo === null) {
     return <>Error loading photo</>;
   }
-
-  console.log(photo, photoStatus);
-  console.log(albumData, albumStatus);
 
   return (
     <>
